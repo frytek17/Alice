@@ -49,6 +49,9 @@ public class AnimeCharacterCmd extends Command {
                     case "alice":
                         danbooru.sendPicture(e, DanbooruRating.SAFE, "alice_schuberg");
                         return true;
+                    case "rias_gremory":
+                        danbooru.sendPicture(e, DanbooruRating.SAVE, "rias_gremory_(high_shool_DxD)");
+                        return true;
                     case "rin":
                         danbooru.sendPicture(e, DanbooruRating.SAFE, "toosaka_rin");
                         return true;
@@ -109,6 +112,7 @@ public class AnimeCharacterCmd extends Command {
     private void loadCategories(){
         this.categories.add("random");
         this.categories.add("alice");
+        this.categories.add("rias_gremory")
         this.categories.add("rin");
         this.categories.add("saber");
         this.categories.add("megumin");
